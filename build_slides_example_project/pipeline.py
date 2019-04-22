@@ -156,4 +156,4 @@ class Pipeline(luigi.Task):
 
 
 if __name__ == '__main__':
-    luigi.build([Pipeline(workdir=os.path.abspath('./slides'), pptx_filename='slides_raw.pptx')], workers=6)
+    luigi.build([Pipeline(workdir=os.path.abspath('./slides'), pptx_filename='base.pptx')], workers=6)
